@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Pierre THOMAS - Développeur Web</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -17,45 +18,40 @@
             </ul>
         </nav>
     </header>
-
+    
     <section id="accueil" class="hero">
         <div class="hero-content">
             <h1>Pierre THOMAS</h1>
             <p>Développeur Web Junior</p>
         </div>
     </section>
-
+    
     <main>
         <section id="about" class="section">
-            <h1>Développeur Web</h1>
             <div class="about-content">
                 <div class="profile-image">
                     <img src="./assets/photo_de_profil.webp" alt="Photo de profil">
                 </div>
                 <div class="about-text">
                     <h2>À propos de moi</h2>
-                    <p>Je suis un développeur web passionné par la création d'expériences web innovantes et intuitives. Spécialisé dans le développement front-end et back-end, je transforme des idées en solutions digitales performantes.</p>
-                    <div class="skills">
-                        <h3>Compétences</h3>
-                        <ul>
-                            <li>HTML5 / CSS3</li>
-                            <li>JavaScript</li>
-                            <li>React.js</li>
-                            <li>Node.js</li>
-                            <li>Redux</li>                            
-                        </ul>
+                    <p>Hello ! Je m'appelle Pierre Thomas, développeur web passionné par la création d'expériences web innovantes et intuitives. Diplomé de la <a href="https://openclassrooms.com/fr/paths/900-integrateur-web">formation d'intégrateur web</a> d'openclassrooms spécialisé dans le développement front-end, je transforme des idées en solutions digitales performantes.</p>
+                </div>
+                <div class="skills">
+                    <h3>Compétences</h3>
+                    <div class="skills-chart">
+                        <canvas id="skillsChart"></canvas>
                     </div>
                 </div>
             </div>
         </section>
-
+        
         <section id="portfolio" class="section">
             <h2>Mes Projets</h2>
             <div class="portfolio-grid">
                 <!-- Les projets seront ajoutés dynamiquement via JavaScript -->
             </div>
         </section>
-
+        
         <section id="contact" class="section">
             <h2>Me Contacter</h2>
             <form id="contact-form">
@@ -75,11 +71,11 @@
             </form>
         </section>
     </main>
-
+    
     <footer>
         <p>&copy; 2025 Pierre THOMAS. Tous droits réservés.</p>
     </footer>
-
+    
     <script src="script.js"></script>
 </body>
 </html>

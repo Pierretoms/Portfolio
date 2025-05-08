@@ -1,7 +1,8 @@
 /* Variables et reset */
 :root {
     --primary-color: #c04600;
-    --secondary-color: #0835c9;
+    --secondary-color: #0139f3;
+    --link-color: #8102ca;
     --text-color: #ffffff;
     --background-color: #242222;
 }
@@ -97,7 +98,7 @@ header.scrolled nav ul li a {
 }
 
 header.scrolled nav ul li a:hover {
-    color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 nav ul li a:hover {
@@ -114,35 +115,43 @@ nav ul li a:hover {
 
 /* Section À propos */
 .about-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
 }
 
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .profile-image img {
-    width: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
 .about-text {
-    flex: 1;
+    padding-right: 2rem;
 }
 
-.skills ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    list-style: none;
-    margin-top: 1rem;
+.about-text h2 {
+    margin-bottom: 1rem;
 }
 
-.skills li {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+.about-text a {
+    color: var(--primary-color);
+}
+
+/* Style pour le graphique des compétences */
+.skills-chart {
+    width: 400px;
+    height: 400px;
+    margin: 2rem auto;
 }
 
 /* Section Portfolio */
@@ -226,6 +235,26 @@ footer {
     color: black;
     text-align: center;
     padding: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .profile-image, .about-text, .skills {
+        text-align: center;
+    }
+
+    .about-text {
+        padding-right: 0;
+    }
+
+    .skills-chart {
+        margin: 2rem auto;
+    }
 }
 
 /* Media Queries */
