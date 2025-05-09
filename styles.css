@@ -1,8 +1,7 @@
 /* Variables et reset */
 :root {
     --primary-color: #c04600;
-    --secondary-color: #0139f3;
-    --link-color: #8102ca;
+    --secondary-color: #2980b9;
     --text-color: #ffffff;
     --background-color: #242222;
 }
@@ -58,7 +57,6 @@ main {
     padding-top: 0;
 }
 
-/* Le reste de votre CSS existant */
 * {
     margin: 0;
     padding: 0;
@@ -151,10 +149,15 @@ nav ul li a:hover {
 .skills-chart {
     width: 400px;
     height: 400px;
-    margin: 2rem auto;
+    margin-top: 2rem;
 }
 
 /* Section Portfolio */
+#portfolio h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -186,47 +189,99 @@ nav ul li a:hover {
 }
 
 /* Section Contact */
-#contact-form {
-    max-width: 600px;
+#contact {
+    min-height: 100vh;
+    background: black;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.contact-container {
+    max-width: 800px;
     margin: 0 auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
     font-weight: bold;
+    color: white;
 }
 
-input, textarea {
+input, textarea, select {
     width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
     font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+select {
+    cursor: pointer;
+}
+
+select option {
+    background: var(--background-color);
+    color: white;
 }
 
 textarea {
-    height: 150px;
+    height: 200px;
     resize: vertical;
 }
 
 button {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s;
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-container {
+        margin: 1rem;
+    }
 }
 
 /* Footer */

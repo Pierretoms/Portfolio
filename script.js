@@ -78,8 +78,10 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
     
     const formData = {
-        name: document.getElementById('name').value,
+        firstname: document.getElementById('firstname').value,
+        lastname: document.getElementById('lastname').value,
         email: document.getElementById('email').value,
+        motif: document.getElementById('motif').value,
         message: document.getElementById('message').value
     };
     
