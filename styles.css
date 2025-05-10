@@ -328,10 +328,26 @@ footer {
     .skills-chart {
         margin: 2rem auto;
     }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
+    .section {
+        padding: 3rem 1rem;
+    }
+
+    nav ul {
+        font-size: 14px;
+    }
+
     .about-content {
         flex-direction: column;
         text-align: center;
@@ -341,8 +357,14 @@ footer {
         margin: 0 auto;
     }
 
-    .skills ul {
-        justify-content: center;
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        padding: 0 1rem;
+    }
+
+    .project-card {
+        margin-bottom: 2rem;
     }
 
     .form-row {
