@@ -288,8 +288,55 @@ button:hover {
 footer {
     background-color: var(--primary-color);
     color: black;
+    padding: 1.5rem;
+}
+
+.footer-content {
+    margin: 0 auto;
+    position: relative;
+    padding: 0 4rem;
+}
+
+.footer-content p {
     text-align: center;
-    padding: 1rem;
+}
+
+.social-links {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-link {
+    color: black;
+    font-size: 1.8rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+    color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+/* Media Query pour le footer responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 0 1rem;
+    }
+
+    .social-links {
+        position: static;
+        justify-content: center;
+        transform: none;
+        margin-top: 1rem;
+    }
+
+    .footer-content p {
+        text-align: center;
+    }
 }
 
 /* Media Queries */
