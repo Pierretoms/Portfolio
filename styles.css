@@ -273,17 +273,6 @@ button:hover {
     cursor: pointer;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    .form-row {
-        grid-template-columns: 1fr;
-    }
-    
-    .contact-container {
-        margin: 1rem;
-    }
-}
-
 /* Footer */
 footer {
     background-color: var(--primary-color);
@@ -321,24 +310,6 @@ footer {
     transform: translateY(-3px);
 }
 
-/* Media Query pour le footer responsive */
-@media (max-width: 768px) {
-    .footer-content {
-        padding: 0 1rem;
-    }
-
-    .social-links {
-        position: static;
-        justify-content: center;
-        transform: none;
-        margin-top: 1rem;
-    }
-
-    .footer-content p {
-        text-align: center;
-    }
-}
-
 /* Media Queries */
 @media (max-width: 1200px) {
     .about-content {
@@ -372,5 +343,28 @@ footer {
 
     .skills ul {
         justify-content: center;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-container {
+        margin: 1rem;
+    }
+
+    .footer-content {
+        padding: 0 1rem;
+    }
+
+    .social-links {
+        position: static;
+        justify-content: center;
+        transform: none;
+        margin-top: 1rem;
+    }
+
+    .footer-content p {
+        text-align: center;
     }
 }
