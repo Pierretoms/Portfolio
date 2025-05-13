@@ -131,6 +131,8 @@ nav ul li a:hover {
     height: 350px;
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .about-text {
@@ -345,7 +347,8 @@ footer {
     }
 
     nav ul {
-        font-size: 14px;
+        font-size: 12px;
+        text-wrap: nowrap;
     }
 
     .about-content {
@@ -355,6 +358,16 @@ footer {
 
     .profile-image {
         margin: 0 auto;
+    }
+
+    .profile-image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .skills-chart {
+        width: 300px;
+        height: 300px;
     }
 
     .portfolio-grid {
@@ -373,6 +386,7 @@ footer {
     
     .contact-container {
         margin: 1rem;
+        padding: 1.5rem;
     }
 
     .footer-content {
