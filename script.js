@@ -15,37 +15,37 @@ const projects = [
     {
         title: "Projet E-commerce",
         description: "Site e-commerce responsive avec panier d'achat",
-        image: "placeholder-project1.jpg",
+        image: "https://placehold.co/900x500",
         technologies: ["React", "Node.js", "MongoDB"]
     },
     {
         title: "Application de Gestion",
         description: "Dashboard administratif pour la gestion de données",
-        image: "placeholder-project2.jpg",
+        image: "https://placehold.co/900x500",
         technologies: ["Vue.js", "Express", "MySQL"]
     },
     {
         title: "Site Vitrine",
         description: "Site vitrine moderne pour une entreprise locale",
-        image: "placeholder-project3.jpg",
+        image: "https://placehold.co/900x500",
         technologies: ["HTML", "CSS", "JavaScript"]
     },
     {
         title: "Site Vitrine",
         description: "Site vitrine moderne pour une entreprise locale",
-        image: "placeholder-project3.jpg",
+        image: "https://placehold.co/900x500",
         technologies: ["HTML", "CSS", "JavaScript"]
     },
     {
         title: "Site Vitrine",
         description: "Site vitrine moderne pour une entreprise locale",
-        image: "placeholder-project3.jpg",
+        image: "https://placehold.co/900x500",
         technologies: ["HTML", "CSS", "JavaScript"]
     },
     {
         title: "Site Vitrine",
         description: "Site vitrine moderne pour une entreprise locale",
-        image: "placeholder-project3.jpg",
+        image: "https://placehold.co/900x500",
         technologies: ["HTML", "CSS", "JavaScript"]
     }
 ];

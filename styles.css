@@ -23,12 +23,11 @@ header.scrolled {
 
 /* Style de la section hero */
 .hero {
-    height: 100vh;
+    height: 100svh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/hero-background.avif');
+    background-image: url('./assets/hero-background.webp');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
