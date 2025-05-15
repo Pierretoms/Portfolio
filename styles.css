@@ -1,7 +1,8 @@
 /* Variables et reset */
 :root {
     --primary-color: #c04600;
-    --secondary-color: #2980b9;
+    --secondary-color: #fb8b24;
+    --link-color: #255f85;
     --text-color: #ffffff;
     --background-color: #242222;
 }
@@ -142,8 +143,30 @@ nav ul li a:hover {
     margin-bottom: 1rem;
 }
 
-.about-text a {
-    color: var(--primary-color);
+.link-formation {
+    color: var(--secondary-color);
+}
+
+.link-formation:hover {
+    color: var(--link-color);
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: var(--link-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* Style pour le graphique des compétences */
@@ -189,91 +212,6 @@ nav ul li a:hover {
     padding: 1.5rem;
 }
 
-/* Section Contact */
-#contact {
-    min-height: 100vh;
-    background: black;
-}
-
-#contact h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    color: white;
-}
-
-.contact-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-.form-group {
-    margin-bottom: 2rem;
-}
-
-label {
-    display: block;
-    margin-bottom: 0.8rem;
-    font-weight: bold;
-    color: white;
-}
-
-input, textarea, select {
-    width: 100%;
-    padding: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    font-size: 1rem;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    transition: all 0.3s ease;
-}
-
-input:focus, textarea:focus, select:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    background: rgba(255, 255, 255, 0.2);
-}
-
-select {
-    cursor: pointer;
-}
-
-select option {
-    background: var(--background-color);
-    color: white;
-}
-
-textarea {
-    height: 200px;
-    resize: vertical;
-}
-
-button {
-    width: 100%;
-    padding: 1.2rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-button:hover {
-    background-color: var(--secondary-color);
-    color: white;
-    cursor: pointer;
-}
-
 /* Footer */
 footer {
     background-color: var(--primary-color);
@@ -307,7 +245,7 @@ footer {
 }
 
 .social-link:hover {
-    color: var(--secondary-color);
+    color: var(--link-color);
     transform: translateY(-3px);
 }
 
@@ -362,6 +300,13 @@ footer {
     .profile-image img {
         width: 250px;
         height: 250px;
+    }
+
+    .contact-btn {
+        display: block;
+        text-align: center;
+        margin: 2rem auto 0;
+        max-width: 200px;
     }
 
     .skills-chart {

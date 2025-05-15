@@ -73,23 +73,6 @@ function displayProjects() {
     });
 }
 
-// Gestion du formulaire de contact
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const formData = {
-        firstname: document.getElementById('firstname').value,
-        lastname: document.getElementById('lastname').value,
-        email: document.getElementById('email').value,
-        motif: document.getElementById('motif').value,
-        message: document.getElementById('message').value
-    };
-    
-    // Simulation d'envoi du formulaire
-    alert('Message envoyé avec succès !');
-    this.reset();
-});
-
 // Animation de défilement fluide
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
