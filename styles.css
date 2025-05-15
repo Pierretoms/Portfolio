@@ -136,11 +136,15 @@ nav ul li a:hover {
 }
 
 .about-text {
-    padding-right: 2rem;
+    justify-items: center;
 }
 
 .about-text h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.about-text p {
+    text-align: justify;
 }
 
 .link-formation {
@@ -161,6 +165,7 @@ nav ul li a:hover {
     margin-top: 2rem;
     font-weight: bold;
     transition: all 0.3s ease;
+    justify-content: center;
 }
 
 .contact-btn:hover {
@@ -169,11 +174,59 @@ nav ul li a:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* Style pour le graphique des compétences */
-.skills-chart {
-    width: 400px;
-    height: 400px;
+/* Style pour la liste des compétences */
+.skills-list {
+    height: 350px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
     margin-top: 2rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-color) rgba(255, 255, 255, 0.1);
+}
+
+.skills-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.skills-list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.skills-list::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-item:last-child {
+    border-bottom: none;
+}
+
+.skill-item:hover {
+    transform: translateX(10px);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+}
+
+.skill-item i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.skill-item span {
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 /* Section Portfolio */
@@ -264,8 +317,8 @@ footer {
         padding-right: 0;
     }
 
-    .skills-chart {
-        margin: 2rem auto;
+    .about-text p {
+        text-align: center;
     }
 
     .portfolio-grid {
