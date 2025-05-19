@@ -2,7 +2,7 @@
 :root {
     --primary-color: #c04600;
     --secondary-color: #fb8b24;
-    --link-color: #255f85;
+    --link-color: #0c8ee6;
     --text-color: #ffffff;
     --background-color: #242222;
 }
@@ -143,10 +143,6 @@ nav ul li a:hover {
     margin-bottom: 2rem;
 }
 
-.about-text p {
-    text-align: justify;
-}
-
 .link-formation {
     color: var(--secondary-color);
 }
@@ -158,7 +154,7 @@ nav ul li a:hover {
 .contact-btn {
     display: inline-block;
     background-color: var(--secondary-color);
-    color: white;
+    color: black;
     padding: 1rem 2rem;
     border-radius: 5px;
     text-decoration: none;
@@ -282,6 +278,7 @@ nav ul li a:hover {
 
 .technologies span {
     background: var(--secondary-color);
+    color: black;
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -289,6 +286,128 @@ nav ul li a:hover {
 
 .project-card:hover {
     transform: translateY(-5px);
+}
+
+/* Style pour la modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.modal-content {
+    position: relative;
+    background-color: var(--background-color);
+    margin: 2rem auto;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Ajout du style pour la barre de défilement personnalisée */
+.modal::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+/* Style pour Firefox */
+.modal {
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-color) rgba(255, 255, 255, 0.1);
+}
+
+.close-modal {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.close-modal:hover {
+    color: var(--secondary-color);
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-body img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+.modal-description, .modal-tech-section {
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.modal-description h3, .modal-tech-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.modal-description p {
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.modal-technologies {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.tech-badge {
+    background-color: var(--secondary-color);
+    color: black;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+}
+
+.modal-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.project-link {
+    background-color: var(--secondary-color);
+    color: black;
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: var(--link-color);
+    transform: translateY(-3px);
 }
 
 /* Footer */
@@ -391,6 +510,53 @@ footer {
         margin: 0 auto;
         padding: 0 1rem;
     }
+
+    .project-info {
+        padding: 1rem;
+    }
+
+    .project-info h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .technologies span {
+        font-size: 0.5rem;
+    }
+
+    .modal-content {
+        margin: 1.5rem auto;
+        padding: 1.5rem;
+    }
+
+    .modal-body img {
+        max-height: 300px;
+    }
+
+    .modal-description, .modal-tech-section {
+        margin: 1.5rem 0;
+    }
+
+    .modal-description h3, .modal-tech-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .modal-description p {
+        font-size: 1rem;
+    }
+
+    .tech-badge {
+        font-size: 0.9rem;
+    }
+
+    .modal-links {
+        gap: 1.5rem;
+    }
+
+    .project-link {
+        padding: 0.7rem 1.3rem;
+        font-size: 1rem;
+    }
 }
 
 /* Media Queries */
@@ -432,6 +598,45 @@ footer {
         max-width: 350px;
     }
 
+    .modal-content {
+        margin: 1rem;
+        width: calc(100% - 2rem);
+        padding: 1rem;
+    }
+
+    .modal-body img {
+        max-height: 200px;
+    }
+
+    .modal-description, .modal-tech-section {
+        margin: 1rem 0;
+    }
+
+    .modal-description h3, .modal-tech-section h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .modal-description p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .tech-badge {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.6rem;
+    }
+
+    .modal-links {
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .project-link {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
     .portfolio-grid {
         grid-template-columns: 1fr;
         max-width: 400px;
@@ -442,14 +647,6 @@ footer {
         margin-bottom: 2rem;
     }
 
-    .form-row {
-        grid-template-columns: 1fr;
-    }
-    
-    .contact-container {
-        margin: 1rem;
-        padding: 1.5rem;
-    }
 
     .footer-content {
         padding: 0 1rem;
