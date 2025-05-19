@@ -13,7 +13,7 @@ window.addEventListener('scroll', function() {
 const projects = [
     {
         title: "Oh My Food",
-        image: "./assets/Oh-my-food-screen.webp",
+        image: "./assets/oh-my-food-screen.webp",
         technologies: ["HTML", "SASS"],
         description: "Oh My Food est une application web permettant aux clients de composer leur menu et de réduire leur temps d'attente dans les restaurants. L'application propose une interface moderne et intuitive avec des animations CSS élégantes.",
         codeLink: "https://github.com/Pierretoms/Oh-My-Food",
