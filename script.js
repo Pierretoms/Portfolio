@@ -13,40 +13,34 @@ window.addEventListener('scroll', function() {
 // Données des projets
 const projects = [
     {
-        title: "Projet E-commerce",
-        description: "Site e-commerce responsive avec panier d'achat",
-        image: "https://placehold.co/900x500",
-        technologies: ["React", "Node.js", "MongoDB"]
+        title: "Oh My Food",
+        image: "./assets/Oh-my-food-screen.webp",
+        technologies: ["HTML", "SASS"]
     },
     {
-        title: "Application de Gestion",
-        description: "Dashboard administratif pour la gestion de données",
+        title: "Sophie Bluel",
         image: "https://placehold.co/900x500",
-        technologies: ["Vue.js", "Express", "MySQL"]
+        technologies: ["HTML", "CSS", "JavaScript", "Node.js"]
     },
     {
-        title: "Site Vitrine",
-        description: "Site vitrine moderne pour une entreprise locale",
+        title: "Kasa",
+        image: "https://placehold.co/900x500",
+        technologies: ["React", "SASS", "JavaScript", "Node.js"]
+    },
+    {
+        title: "Nina Carducci",
         image: "https://placehold.co/900x500",
         technologies: ["HTML", "CSS", "JavaScript"]
     },
     {
-        title: "Site Vitrine",
-        description: "Site vitrine moderne pour une entreprise locale",
+        title: "724 Events",
         image: "https://placehold.co/900x500",
-        technologies: ["HTML", "CSS", "JavaScript"]
+        technologies: ["React", "SASS", "JavaScript"]
     },
     {
-        title: "Site Vitrine",
-        description: "Site vitrine moderne pour une entreprise locale",
+        title: "Argent Bank",
         image: "https://placehold.co/900x500",
-        technologies: ["HTML", "CSS", "JavaScript"]
-    },
-    {
-        title: "Site Vitrine",
-        description: "Site vitrine moderne pour une entreprise locale",
-        image: "https://placehold.co/900x500",
-        technologies: ["HTML", "CSS", "JavaScript"]
+        technologies: ["React", "SASS", "JavaScript", "Node.js", "Redux"]
     }
 ];
 
@@ -62,9 +56,8 @@ function displayProjects() {
             <img src="${project.image}" alt="${project.title}">
             <div class="project-info">
                 <h3>${project.title}</h3>
-                <p>${project.description}</p>
                 <div class="technologies">
-                    ${project.technologies.map(tech => `<span>${tech}</span>`).join(' ')}
+                    ${project.technologies.map(tech => `<span>${tech}</span>`).join('')}
                 </div>
             </div>
         `;
