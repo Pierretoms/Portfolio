@@ -13,7 +13,7 @@ window.addEventListener('scroll', function() {
 const projects = [
     {
         title: "Oh My Food",
-        image: "./assets/oh-my-food-screen.webp",
+        image: "./assets/Oh-my-food-screen.webp",
         technologies: ["HTML", "SASS"],
         description: "Oh My Food est une application web permettant aux clients de composer leur menu et de réduire leur temps d'attente dans les restaurants. L'application propose une interface moderne et intuitive avec des animations CSS élégantes.",
         codeLink: "https://github.com/Pierretoms/Oh-My-Food",
@@ -21,21 +21,21 @@ const projects = [
     },
     {
         title: "Sophie Bluel",
-        image: "./assets/sophie-bluel-screen.webp",
+        image: "./assets/Sophie-Bluel-screen.webp",
         technologies: ["HTML", "CSS", "JavaScript", "Node.js"],
         description: "Portfolio architecte d'intérieur avec une interface d'administration permettant la gestion dynamique des projets. Développement d'une API RESTful et intégration front-end complète.",
         codeLink: "https://github.com/Pierretoms/Sophie-Bluel"
     },
     {
         title: "Kasa",
-        image: "./assets/kasa-screen.webp",
+        image: "./assets/Kasa-screen.webp",
         technologies: ["React", "SASS", "JavaScript", "Node.js"],
         codeLink: "https://github.com/Pierretoms/Kasa",
         siteLink: "https://votre-site-ohmyfood.com"
     },
     {
         title: "Nina Carducci",
-        image: "./assets/nina-carducci-screen.webp",
+        image: "./assets/Nina-Carducci-screen.webp",
         technologies: ["HTML", "CSS", "JavaScript"],
         codeLink: "https://github.com/Pierretoms/Nina-carducci",
         siteLink: "https://pierretoms.github.io/Nina-carducci/"
@@ -49,7 +49,7 @@ const projects = [
     },
     {
         title: "Argent Bank",
-        image: "./assets/argent-bank-screen.webp",
+        image: "./assets/Argent-Bank-screen.webp",
         technologies: ["React", "SASS", "JavaScript", "Node.js", "Redux"],
         codeLink: "https://github.com/Pierretoms/Argent-Bank",
     }
