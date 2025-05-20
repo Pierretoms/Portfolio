@@ -15,7 +15,7 @@ const projects = [
         title: "Oh My Food",
         image: "./assets/Oh-my-food-screen.webp",
         technologies: ["HTML", "SASS"],
-        description: "Oh My Food est une application web permettant aux clients de composer leur menu et de réduire leur temps d'attente dans les restaurants. L'application propose une interface moderne et intuitive avec des animations CSS élégantes.",
+        description: "Oh My Food est un site “mobile first” qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. Ici est proposée une interface moderne et intuitive avec des animations CSS élégantes.",
         codeLink: "https://github.com/Pierretoms/Oh-My-Food",
         siteLink: "https://pierretoms.github.io/Oh-My-Food/"
     },
@@ -23,13 +23,14 @@ const projects = [
         title: "Sophie Bluel",
         image: "./assets/Sophie-Bluel-screen.webp",
         technologies: ["HTML", "CSS", "JavaScript", "Node.js"],
-        description: "Portfolio architecte d'intérieur avec une interface d'administration permettant la gestion dynamique des projets. Développement d'une API RESTful et intégration front-end complète.",
+        description: "Portfolio d'une architecte d'intérieur avec une interface d'administration permettant la gestion dynamique des projets. Développement d'une API RESTful et intégration front-end complète.",
         codeLink: "https://github.com/Pierretoms/Sophie-Bluel"
     },
     {
         title: "Kasa",
         image: "./assets/Kasa-screen.webp",
         technologies: ["React", "SASS", "JavaScript", "Node.js"],
+        description: "Kasa est un site web qui permet aux utilisateurs de trouver des hébergements et des activités dans la ville de leur choix. L'application est construite avec React et utilise un back end sous fichier json pour récupérer les données.",
         codeLink: "https://github.com/Pierretoms/Kasa",
         siteLink: "https://votre-site-ohmyfood.com"
     },
@@ -37,13 +38,15 @@ const projects = [
         title: "Nina Carducci",
         image: "./assets/Nina-Carducci-screen.webp",
         technologies: ["HTML", "CSS", "JavaScript"],
+        description: "Portfolio d'une photographe freelance avec une interface d'administration permettant la gestion dynamique des projets. Le but de ce projet est de travailler sur une optimisations du code & images ainsi que du SEO via audit lighthouse et wave.",
         codeLink: "https://github.com/Pierretoms/Nina-carducci",
         siteLink: "https://pierretoms.github.io/Nina-carducci/"
     },
     {
         title: "724 Events",
         image: "./assets/724-events-screen.webp",
-        technologies: ["React", "SASS", "JavaScript"],
+        technologies: ["React", "SASS", "JavaScript", "Node.js"],
+        description: "724 Events est le site web d'une agence évènementielle. L'application est construite avec React et utilise un back end sous fichier js pour récupérer les données. Ici le défi était de reprendre le code d'un ancien développeur ayant laisser énormement de bugs.",
         codeLink: "https://github.com/Pierretoms/724-events",
         siteLink: "https://votre-site-ohmyfood.com"
     },
@@ -51,6 +54,7 @@ const projects = [
         title: "Argent Bank",
         image: "./assets/Argent-Bank-screen.webp",
         technologies: ["React", "SASS", "JavaScript", "Node.js", "Redux"],
+        description: "Argent Bank est un site web d'une banque en ligne. L'application est construite avec React et utilise une API et mongoDB pour récupérer les données. Pour le state de l'ensemble de l'application ici il sera gérer via Redux & Reduxtoolkit, l'intégration sera optimisé pour convenir au bonnes pratiques de green code.",
         codeLink: "https://github.com/Pierretoms/Argent-Bank",
     }
 ];

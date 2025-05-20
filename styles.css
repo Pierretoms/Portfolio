@@ -39,6 +39,9 @@ header.scrolled {
 
 .hero-content {
     padding: 2rem;
+    background-color: rgba(36, 34, 34, 0.8);  
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .hero h1 {
@@ -573,6 +576,11 @@ footer {
     .about-content {
         flex-direction: column;
         text-align: center;
+    }
+
+    .about-text p {
+        width: 90%;
+        font-size: 14px;
     }
 
     .profile-image {
