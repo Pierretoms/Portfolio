@@ -31,8 +31,7 @@ const projects = [
         image: "./assets/Kasa-screen.webp",
         technologies: ["React", "SASS", "JavaScript", "Node.js"],
         description: "Kasa est un site web qui permet aux utilisateurs de trouver des hébergements et des activités dans la ville de leur choix. L'application est construite avec React et utilise un back end sous fichier json pour récupérer les données.",
-        codeLink: "https://github.com/Pierretoms/Kasa",
-        siteLink: "https://votre-site-ohmyfood.com"
+        codeLink: "https://github.com/Pierretoms/Kasa"
     },
     {
         title: "Nina Carducci",
@@ -47,8 +46,7 @@ const projects = [
         image: "./assets/724-events-screen.webp",
         technologies: ["React", "SASS", "JavaScript", "Node.js"],
         description: "724 Events est le site web d'une agence évènementielle. L'application est construite avec React et utilise un back end sous fichier js pour récupérer les données. Ici le défi était de reprendre le code d'un ancien développeur ayant laisser énormement de bugs.",
-        codeLink: "https://github.com/Pierretoms/724-events",
-        siteLink: "https://votre-site-ohmyfood.com"
+        codeLink: "https://github.com/Pierretoms/724-events"
     },
     {
         title: "Argent Bank",
